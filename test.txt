@@ -1,0 +1,7 @@
+rails generate model Teacher first_name:string last_name:string grade_level:string
+
+rails generate model Student first_name:string last_name:string 
+
+rails generate model Standard title:string description:string
+
+rails generate model MasteryLevel assignment_description:string 
