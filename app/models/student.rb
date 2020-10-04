@@ -1,4 +1,4 @@
 class Student < ApplicationRecord
-  has_and_belongs_to_many :teachers
-  has_many :mastery_levels, through: :standards
+  belongs_to :teacher
+  has_many :mastery_level, through: :standard
 end

@@ -1,0 +1,10 @@
+<h1>Welcome to MasteryTracker <%= @teacher.first_name %></h1>
+
+<%= link_to 'Edit Your Account', edit_teacher_path(@teacher) %>
+
+<h2>Your Student Roster:</h2>
+  <%= render @teacher.students %>
+
+<h2>Add A Student</h2>
+<%= render 'students/new' %>
+

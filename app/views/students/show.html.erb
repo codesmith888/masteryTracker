@@ -1,0 +1,20 @@
+<h1>You've successfully added a new student!</h1>
+<p>
+  <strong>First Name:</strong>
+  <%= @student.first_name %>
+</p>
+<p>
+  <strong>Last Name:</strong>
+  <%= @student.last_name %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%= @student.email %>
+</p>
+<p>
+  <strong>Password:</strong>
+  <%= @student.password %>
+</p>
+
+<%= link_to 'Edit', edit_student_path(@student) %>
+<%= link_to 'Add Another Student', new_student_path(@student) %>
